@@ -1,0 +1,72 @@
+// Font Weight
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+$font-size--h1: 48;
+$font-size--h2: 38;
+$font-size--h3: 16;
+$font-size--h4: 12;
+$font-size--h5: 10;
+$font-size--h6: 8;
+
+$color--black: #000;
+$color--white: #fff;
+$color--grey: #eaeaea;
+$color--gold: #e48800;
+
+$color--transparent: rgba(255, 255, 255, 0);
+$color--placeholder: #f0f0f0;
+$color--error: #da3636;
+
+$breakpoint-tablet-max: 1024px;
+$breakpoint-tablet-min: 768px;
+$breakpoint-mobile-min: 320px;
+$breakpoint-mobile-max: 480px;
+$breakpoint-laptop-min: 1200px;
+$breakpoint-laptop-max: 1599px;
+$breakpoint-biglaptop-min: 1600px;
+$breakpoint-biglaptop-max: 1700px;
+
+// z-index
+$z-index-0: 0;
+$z-index-1: 10;
+$z-index-2: 20;
+$z-index-3: 30;
+$z-index-4: 100;
+$z-index-5: 1000;
+
+// using @extend %center-fixed
+%center-fixed {
+  position: fixed;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+
+%full-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+%center-absolute {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+
+%full-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+

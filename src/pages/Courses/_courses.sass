@@ -1,0 +1,243 @@
+@import '../../styles/assets/variable';
+@import '../../styles/assets/mixins';
+
+.containercourses
+  width: 100vw
+  height: 100vh
+  overflow: hidden
+  overflow-y: auto !important
+
+  ::-webkit-scrollbar
+    display: block
+
+  .containeroverlay
+    width: 100%
+    height: 684px
+    background-image: url("https://refactory.id/wp-content/uploads/2020/01/IMG_7378.jpg")
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+
+    .overlay
+      width: 100%
+      height: inherit
+      background-color: tranparent
+      background-image: linear-gradient(110deg, #00256C 10%, #04ACA4 90%)
+      transition: background 0.3s, border-radius 0.3s, opacity 0.3s
+      opacity: 0.6
+      position: absolute
+      top: 0
+      left: 0
+
+    .content
+      max-width: 1140px
+      height: 100%
+      margin: 0 auto
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      z-index: 99
+
+      .title
+        margin: 16% auto 0
+        +flex(row, center, center)
+
+      .wrapperbutton
+        width: 100%
+        height: 34px
+        +flex(row, center, center)
+
+        .button1
+          width: 260px
+          height: 34px
+          border: none
+          outline: none
+          margin: 0 25px 0 0
+          font-size: 14px
+          border-radius: 20px
+          font-family: 'Montserrat', sans-serif
+          background-color: #E48800
+          +flex(row, center ,center)
+
+        .button2
+          width: 200px
+          height: 34px
+          border: 1px solid #E48800
+          outline: none
+          font-size: 14px
+          border-radius: 20px
+          font-family: 'Montserrat', sans-serif
+          background-color: transparent
+          +flex(row, center ,center)
+
+        .button1, .button2
+          &:hover
+            color: $color--white
+            background-color: #FF9800
+
+  .sectiontwo
+    width: 100%
+    height: auto
+    padding: 100px 200px
+    background-color: #ffffff
+    +flex(row)
+
+    .contentfirst
+      width: 40%
+      height: auto
+
+      .button1
+        width: 177px
+        height: 34px
+        border: none
+        outline: none
+        margin: 60px 0 0
+        font-size: 14px
+        border-radius: 20px
+        font-family: 'Montserrat', sans-serif
+        background-color: #E48800
+        +flex(row, center ,center)
+
+        &:hover
+          color: $color--white
+          background-color: #FF9800
+
+    .contentsecond
+      width: 60%
+      height: auto
+      +flex(row, flex-end)
+
+      .img
+        width: 504px
+        height: auto
+        object-fit: contain
+
+  .sectionthree
+    width: 100%
+    height: auto
+    background-color: #F4F5F6
+
+    .content
+      width: 100%
+      height: auto
+      padding: 50px 80px 50px 170px
+      +flex(row)
+
+      .contenttextarea
+        width: 45%
+        height: auto
+
+        .button1
+          width: 177px
+          height: 34px
+          border: none
+          outline: none
+          margin: 50px 0 0
+          font-size: 14px
+          border-radius: 20px
+          font-family: 'Montserrat', sans-serif
+          background-color: #E48800
+          +flex(row, center ,center)
+
+          &:hover
+            color: $color--white
+            background-color: #FF9800
+
+      .contentpicture
+        width: 55%
+        height: auto
+        +flex(row, flex-end, center)
+
+        .img
+          width: 95%
+          height: auto
+          object-fit: contain
+
+  .sectionfour
+    width: 100%
+    height: auto
+    background-color: #ffffff
+    padding: 70px 150px
+
+    .report
+      +flex(row, center, center)
+
+    .contentcard
+      max-width: 1140px
+      height: auto
+      margin: 80px 0 0
+      +flex(row, center, center)
+
+      .card
+        max-width: 384px
+        height: auto
+        margin: 0 20px
+        padding: 16px 25px
+        border-radius: 5px
+        box-shadow: 0px 12px 20px 0px rgba(223, 223, 223, 0.8)
+        background-color: #FFFFFF
+
+        .star
+          margin: 30px 0
+          +flex(row)
+
+        .img
+          width: 332px
+          height: 332px
+          margin: 10px auto 40px
+          object-fit: contain
+
+  .sectionfive
+    width: 100%
+    height: 158px
+    background-image: linear-gradient(90deg, #127BCA 0%, #35B4AE 100%)
+    background-color: transparent
+    +flex(row, center, center)
+
+    .button1
+      width: 200px
+      height: 34px
+      border: none
+      outline: none
+      margin: 0 0 0 75px
+      font-size: 14px
+      border-radius: 20px
+      font-family: 'Montserrat', sans-serif
+      background-color: #E48800
+      +flex(row, center ,center)
+
+      &:hover
+        color: $color--white
+        background-color: #FF9800
+
+  .sectionsix
+    width: 100%
+    height: auto
+    padding: 70px 100px
+    background-color: #ffffff
+
+    .img
+      width: 1024px
+      height: auto
+      margin: 0 auto 20px
+      +flex(row, center, center)
+      object-fit: contain
+
+    .button1
+      width: 178px
+      height: 34px
+      border: none
+      outline: none
+      margin: 0 auto
+      font-size: 14px
+      border-radius: 20px
+      font-family: 'Montserrat', sans-serif
+      background-color: #E48800
+      +flex(row, center ,center)
+
+      &:hover
+        color: $color--white
+        background-color: #FF9800
+

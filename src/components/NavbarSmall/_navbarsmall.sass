@@ -1,0 +1,52 @@
+@import '../../styles/assets/variable';
+@import '../../styles/assets/mixins';
+
+.containernavbarsmall
+  width: 100%
+  height: 61px
+  background-color: #35B4AE
+  background-image: linear-gradient(90deg, #2852a2 21.72%, #35B4AE 75.43%)
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 999
+  +flex(row, none, center)
+
+  .containercontent
+    width: 85%
+    height: auto
+    margin: 0 auto
+    +flex(row, none, center)
+
+    .companylogo
+      width: 113px
+      height: 100%
+      object-fit: contain
+
+    .wrappernavbar
+      position: absolute
+      transform: translate(0,-50%)
+      top: 50%
+      right: 7%
+      +flex(row)
+
+      .wrapperlink
+        padding: 0 16px
+        +flex(row, center, center)
+
+        .button1
+          width: auto
+          height: 38px
+          padding: 0 18px
+          border: none
+          outline: none
+          background-color: #c76e04
+          border-radius: 20px
+          font-size: 14px
+          font-family: 'Raleway', sans-serif
+          +flex(row, center, center)
+
+          &:hover
+            background-color: #c76e04

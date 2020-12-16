@@ -1,0 +1,61 @@
+@import '../../styles/assets/variable';
+@import '../../styles/assets/mixins';
+
+.containerlistcourses
+  width: 100vw
+  height: 100vh
+  overflow: hidden
+  overflow-y: auto !important
+  background-color: #fafafa
+
+  .wrappercontent
+    width: 100%
+    height: auto
+    margin-top: 60px
+    background-color: #fafafa
+    padding: 50px 120px
+
+    .paddingsize
+      padding: 0 15px
+
+    .card
+      background-color: rgba(255,255,255,0.7)
+      box-shadow: 0px 1px #f6e6d3
+      border: 1px solid #f6e6d3
+      padding: 0
+      border-radius: 9px
+      margin: 0 0 50px
+      height: 390px
+      position: relative
+      +flex(column)
+
+      &:hover
+        box-shadow: 0px 0px 0px 1px #e9b77b
+        border: 1px solid #e9b77b
+        transition: all linear 0.1s
+
+      .img
+        width: 100%
+        height: auto
+        border-top-left-radius: 9px
+        border-top-right-radius: 9px
+        object-fit: contain
+
+      .contentcard
+        padding: 16px
+
+        .footercard
+          position: absolute
+          bottom: 5%
+          left: 5%
+          +flex(row, none, center)
+
+          .imgfootercard
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            object-fit: contain
+
+        h3
+          &:hover
+            color: #E07C04

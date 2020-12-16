@@ -1,0 +1,97 @@
+@import './variable';
+
+
+// --------------------------------------------------------
+//
+// Flex Box
+//
+// -----------------------------------------------------------------------------
+@mixin flex($flexDirection: row, $justifyDirection: none, $alignDirection: none) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyDirection;
+  align-items: $alignDirection;
+}
+
+// --------------------------------------------------------
+//
+// scrollbar
+//
+// -----------------------------------------------------------------------------
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%), $margin: 0) {
+  &::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    margin: $margin
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    margin: $margin
+  }
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    margin: $margin
+  }
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    margin: $margin
+  }
+}
+
+// --------------------------------------------------------
+//
+// box shadow
+//
+// -----------------------------------------------------------------------------
+@mixin shadow($p1, $p2, $p3, $color) {
+  box-shadow: $p1 $p2 $p3 $color
+}
+
+@mixin inputPlaceholder() {
+    $selector: '';
+    $prefixes: (
+        moz: "::-moz",
+        webkit: "::-webkit",
+        ie: ":-ms"
+    );
+    @each $prop, $value in $prefixes {
+        @if $prop != "moz" {
+            $selector: #{$value}-input-placeholder;
+        } @else {
+            $selector: #{$value}-placeholder;
+        }
+        @if & {
+            &#{$selector} {
+                @content;
+            }
+        } @else {
+            #{$selector} {
+                @content;
+            }
+        }
+    }
+    &::placeholder {
+      @content;
+    }
+}

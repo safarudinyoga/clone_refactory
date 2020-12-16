@@ -1,0 +1,78 @@
+@import '../../styles/assets/variable';
+@import '../../styles/assets/mixins';
+
+.containerfooter
+  width: 100%
+  height: auto
+
+  .wrapperfooter
+    width: 100%
+    height: 355px
+    padding: 40px 100px 70px
+    background-color: #0c162a
+    border-bottom: 1px solid #333333
+    +flex(row)
+
+    .sitemap
+      width: 20%
+      height: auto
+
+    .company
+      width: 18%
+      height: auto
+
+      .career
+        +flex(row)
+
+      .hiring
+        background-color: #929292
+        padding: 0 6px
+        border-radius: 4px
+        margin: 0 0 0 5px
+
+    .connect
+      width: 18%
+      height: auto
+
+    .socialmedia
+      width: 44%
+      height: auto
+      +flex(column)
+
+      .wrappericon
+        width: 100%
+        height: 30px
+        margin: 0 0 30px
+        +flex(row)
+
+        .sosmedicon
+          width: 30px
+          height: 30px
+          background-color: #35b4ae
+          border-radius: 50%
+          margin: 0 10px 0 0
+
+      .wrapperaddress
+        width: 100%
+        height: auto
+        +flex(row)
+
+        .companyaddress
+          width: 50%
+          height: auto
+
+        .contact
+          width: 50%
+          height: auto
+
+    .sitemap, .company, .connect, .socialmedia
+      h4
+        &:hover
+          color: #e48800
+
+  .wrapperprivacy
+    width: 100%
+    height: auto
+    padding: 38px 100px
+    background-color: #0c162a
+    +flex(row, flex-start)

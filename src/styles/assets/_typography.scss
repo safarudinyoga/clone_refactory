@@ -1,0 +1,149 @@
+@import './variable';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: $color--black;
+}
+
+.raleway {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+h1 {
+  font-size: #{$font-size--h1}px;
+}
+
+h2 {
+  font-size: #{$font-size--h2}px;
+}
+
+h3 {
+  font-size: #{$font-size--h3}px;
+}
+
+h4 {
+  font-size: #{$font-size--h4}px;
+}
+
+h5 {
+  font-size: #{$font-size--h5}px;
+}
+
+h6 {
+  font-size: #{$font-size--h6}px;
+}
+
+.center-align {
+  text-align: center
+}
+
+.left-align {
+  text-align: left
+}
+
+.right-align {
+  text-align: right
+}
+
+.justify-align {
+  text-align: justify
+}
+
+.uppercase {
+  text-transform: uppercase
+}
+
+.italic {
+  font-style: italic !important
+}
+
+.light {
+  font-weight: $light
+}
+
+.reg {
+  font-weight: $regular
+}
+
+.medium {
+  font-weight: $medium;
+}
+
+.semibold {
+  font-weight: $semibold;
+}
+
+.bold {
+  font-weight: $bold;
+}
+
+.t-black {
+  color: $color--black;
+}
+
+.t-white {
+  color: $color--white;
+}
+
+.t-gold {
+  color: $color--gold;
+}
+
+.t-grey {
+  color: $color--grey;
+}
+
+.t-error {
+  color: $color--error;
+}
+
+.margin0 {
+  margin: 0;
+}
+
+.spacing-normal {
+  letter-spacing: 0.1em;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pointer-none {
+  pointer-events: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible_none {
+  visibility: hidden
+}
+
+
+.no-transition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
