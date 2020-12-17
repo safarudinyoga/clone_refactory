@@ -8,13 +8,14 @@ import Img from '../Img'
 import Text from '../Text'
 
 const Navbar = ({
-  active = ''
+  active = '',
+  fill = ''
 }) => {
 
   const history = useHistory();
 
   return (
-    <div className='containernavbar'>
+    <div className='containernavbar' style={{background: fill}}>
       <Img
         src="https://refactory.id/wp-content/uploads/2020/01/refactory-hd-125x52.png"
         alt="companylogo"
@@ -44,13 +45,6 @@ const Navbar = ({
             Tag='h3'
             className={ active === 'list-courses' ? 'semibold t-gold center-align margin0' : 'semibold t-white center-align margin0'}
             text='List Courses'
-          />
-        </div>
-        <div className='wrapperlink pointer' onClick={() => history.push('/studies')}>
-          <Text
-            Tag='h3'
-            className={ active === 'studies' ? 'semibold t-gold center-align margin0' : 'semibold t-white center-align margin0'}
-            text='Case Studies'
           />
         </div>
         <div className='wrapperlink pointer' onClick={() => history.push('/blog')}>

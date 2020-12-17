@@ -1,0 +1,97 @@
+@import '../../styles/assets/variable';
+@import '../../styles/assets/mixins';
+
+.containerdetailblog
+  width: 100vw
+  height: 100vh
+  background-color: #f5f5f5
+  overflow: hidden
+  overflow-y: auto !important
+
+  .containersubnavbar
+    width: 100%
+    height: 80px
+    padding: 0 80px
+    background-color: #005978
+    +flex(row, center, center)
+
+    .subnavbaractive
+      background-color: #5CA3BD
+
+    .subnavbar
+      background-color: tranparent
+      width: auto
+      height: 100%
+      cursor: pointer
+      padding: 0 25px
+      +flex(row, center, center)
+
+      &:hover
+        transition: all 0.4s ease
+        background-color: #5CA3BD
+
+  .sectionfirst
+    max-width: 1140px
+    height: auto
+    margin: 90px auto
+    +flex(row)
+
+    .bloglist
+      width: 66%
+      height: auto
+      padding: 16px
+
+      .imgfirst
+        width: 100%
+        height: auto
+        object-fit: contain
+        margin: 0 0 25px
+
+      .by
+        +flex(row)
+
+    .sidelist
+      width: 34%
+      height: auto
+      padding: 0 30px
+
+      .ikutisosmed
+        +flex(row, flex-start, center)
+
+        .circle
+          width: 50px
+          height: 50px
+          border-radius: 50%
+          border: 2px solid #4E8BA1
+          margin: 5px 10px 5px 0
+
+      .artikelpopuler
+        background-color: #F9F9F9
+        width: 100%
+        height: auto
+        margin: 70px 0 0
+        padding: 20px 26px
+
+        .imgarticle
+          width: 100%
+          height: auto
+          border-radius: 4px
+          object-fit: contain
+          margin: 0 0 25px
+
+        .buttonmore
+          width: 175px
+          height: 35px
+          border: 1px solid #E48800
+          color: #E48800
+          outline: none
+          background-color: #ffffff
+          font-size: 13px
+          border-radius: 20px
+          margin: 0 auto
+          +flex(row, center, center)
+
+          &:hover
+            background-color: #FF9800
+            color: #ffffff
+            border: none

@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios';
+import React, { useState } from 'react'
+import { useHistory } from "react-router-dom";
+// import axios from 'axios';
 // import PropTypes from 'prop-types'
 
 import './_listcourses.sass';
@@ -10,6 +11,8 @@ import Text from '../../components/Text';
 import FooterSmall from '../../components/FooterSmall';
 
 const ListCourses = props => {
+
+  const history = useHistory();
 
   const [data, setData] = useState([
     {
@@ -67,7 +70,11 @@ const ListCourses = props => {
       <NavbarSmall />
       <div className='wrappercontent row'>
         {data.map(res =>
-        <div className='col-xs-12 col-sm-6 col-md-4 paddingsize' key={res.id}>
+        <div
+          className='col-xs-12 col-sm-6 col-md-4 paddingsize pointer'
+          key={res.id}
+          onClick={() => history.push('/detail-courses/html-css')}
+        >
           <div className='card'>
             <Img
               src={res.photo_url}

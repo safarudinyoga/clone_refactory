@@ -161,8 +161,9 @@ const Home = props => {
               className='reg t-black center-align'
               text='Bisnis di jaman modern membutuhkan keterampilan pengembangan terbaik untuk meningkatkan skala produk. Kami dapat mempersiapkan course dan juga dapat menyediakan tim yang menangani kebutuhan digital Anda.'
               style={{
+                color: 'rgba(11, 22, 43, 0.6)',
+                maxWidth: '465px',
                 margin: '0 auto',
-                width: '80%',
                 lineHeight: '30px'
               }}
             />
@@ -206,7 +207,8 @@ const Home = props => {
               text='Kami adalah perusahaan One-Stop IT Solution untuk proyek Anda, membantu di setiap tahap mulai dari menyusun ide, melalui desain dan pengembangan aplikasi seluler, situs web dan aplikasi desktop, hingga peluncuran produk.'
               style={{
                 margin: '0 auto',
-                width: '80%',
+                color: 'rgba(11, 22, 43, 0.6)',
+                maxWidth: '465px',
                 lineHeight: '30px'
               }}
             />

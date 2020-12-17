@@ -28,8 +28,6 @@ const Courses = props => {
     fetchData();
   }, []);
 
-  console.log(data);
-
   return (
     <div className='containercourses'>
       <section className='containeroverlay'>
